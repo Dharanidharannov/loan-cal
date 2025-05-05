@@ -8,6 +8,7 @@ import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import ExchangePage from './pages/ExchangePage';
 import ErrorPage from './components/Error';
+import About from './pages/AboutPage';
 
 
 function App() {
@@ -33,6 +34,7 @@ const ThemeWrapper = () => {
         <Route path="/" element={<HomePage/>}/>
         <Route path='/exchange-rate' element={<ExchangePage/>} />
         <Route path='/error' element={<ErrorPage/>} />
+        <Route path='/about' element={<About/>} />
       </Routes>
     </ThemeProvider>
   );

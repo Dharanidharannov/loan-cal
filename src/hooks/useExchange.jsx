@@ -1,4 +1,4 @@
-// src/hooks/useExchangeRates.js
+    
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -31,8 +31,7 @@ export const useExchangeRates = (apiKey, baseCurrency) => {
     };
 
     fetchRates();
-    
-    // Refresh rates every 5 minutes
+
     const interval = setInterval(fetchRates, 5 * 60 * 1000);
     return () => clearInterval(interval);
   }, [apiKey, baseCurrency]);
